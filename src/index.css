@@ -1,9 +1,38 @@
+:root {
+  --lavender: #7E7DB5;
+  --lilac: #7C5791;
+  --byzantium: #7A306C;
+  --plum: #7B447F;
+  --gray: #b4b4d6;
+  --pink: #D798C9;
+
+}
+
 body {
   margin: 0;
   font-family: "Mulish", sans-serif;
+  background-color: whitesmoke;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul,
+ol,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
 }

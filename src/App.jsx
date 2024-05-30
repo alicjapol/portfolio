@@ -1,25 +1,25 @@
-import './App.css';
-import { ChakraProvider } from '@chakra-ui/react'
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import Header from './components/Header/Header';
-// import Footer from './components/Footer';
-// import About from './components/About';
-// import Projects from './components/Projects';
-// import Contact from './components/Contact';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
-function App() {
+const App = () => {
   return (
-    <ChakraProvider>
-    <div className="App">
+    <Router>
       <Header />
-      {/* <About />
-      <Projects />
-      <Contact />
-      <Footer /> */}
-    </div>
-    </ChakraProvider>
-
+     
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      
+      <Footer/>
+    </Router>
   );
-}
+};
 
 export default App;
